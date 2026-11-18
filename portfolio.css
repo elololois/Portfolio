@@ -41,17 +41,10 @@ h1 {
    margin: 12px;
 }
 
-.perfil-container {
-    width: 407px;
-    height: 560px;
-    
-}
-
-
 .eu {
     z-index: 2;
-    width: 407px;
-    height: 497px;
+    width: 420px;
+    height: 439px;
     border-radius: 50%;
 }
 
@@ -61,17 +54,10 @@ h1 {
     height: 100%;
 }
 
+.tech p,h2{
 
-.circulo-fundo {
-    width: 407px;
-    height: 497px;
-    border-radius: 100%;
-    background-color: #1a1a1a;
-}
-.tech h2,p{
-   
-    color: white;
+    color: rgb(255, 255, 255);
 }
 section{
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(0, 0, 0);
 }
