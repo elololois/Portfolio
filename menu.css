@@ -2,18 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
-    header {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+
+body {
+     width: 100%;
+    max-width: 420px;
+    min-height: 100vh;
+    margin: 0 auto;
     padding: 20px;
-    position: fixed;
-    z-index: 1;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 180%;
+     background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(69, 65, 65, 1) 50%, rgba(252, 252, 252, 1) 100%);
 }
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 12px;
+
+    a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 4px;
+        margin: 4px;
+    }
+}
+
+/* O que é especifico do mobile */
+@media (max-width:600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* O que é especifico do tablet */
+@media (max-width:1024px) {}
+
+/* O que é especifico do desktop */
+@media (min-width:1240px) {}
+
 ul {
     display: flex;
     width: 50vw;
@@ -26,9 +56,17 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
+.Itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
+    li {
+        margin-right: 12px;
+    }
 
-
+}
